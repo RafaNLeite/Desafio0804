@@ -2,28 +2,47 @@
 <html>
 
 <head>
-    <title>Olá, Mundo!</title>
+    <title>Exercício Desafio - 01</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+
     </style>
 </head>
 
 <body>
     <form method="post">
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" />
-            <label for="endereco">Endereco: </label>
-            <input type="endereco" id="endereco" />
-            <label for="cidade">Cidade: </label>
-            <input type="cidade" id="cidade" />
-        </div>
-        <div>  
-            <label for="curriculo">Mini Curriculo:</label>
-            <textarea id="curriculo"></textarea>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <div>
+                <label id="id">Nome:</label>
+                <input type="text" id="nome" />
+            </div>
+            <div>
+                <label id="endereco">Endereco: </label>
+                <input type="text" id="endereco" />
+            </div>
+            <div>
+                <label id="cidade">Cidade: </label>
+                <input type="text" id="cidade" />
+            </div>
+            <div>
+                <label id="estado">Estado: </label>
+                <select id="estado">
+                    <option value="sp">São Paulo</option>
+            </div>
+            </select>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+                <div>
+                    <label id="curriculo">Mini Curriculo:</label>
+                    <textarea id="curriculo"></textarea>
+            </fieldset>
+        
         </div>
     </form>
 </body>
